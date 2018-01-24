@@ -4,6 +4,7 @@ pipeline {
     stage('test-env') {
       steps {
         sh 'df -h'
+        sh 'cat /etc/issue'
       }
     }
   }
